@@ -1,0 +1,12 @@
+py manage.py makemigeation --dry-run --verbosity 3
+py manage.py runserver
+py manage.py createsuperuser
+pip install coverage
+coverage run --omit='*/venv/*' manage.py test
+pip install djangorestframework
+pip install django-crispy-forms
+pip install django-debug-toolbar
+pip install django-extensions
+pip install django-bootstrap3
+pip install django-bootstrap3-datetimepicker
+pip install django-bootstrap3-datetimepicker-extra
